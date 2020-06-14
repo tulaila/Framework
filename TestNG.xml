@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FirstCRM">
+
+       <listeners>
+       <listener class-name="com.gcdp.utilities.Reporting"/> 
+       </listeners>
+   
+	<test name="FirstCRM">
+		<parameter name="browser" value="chrome" />
+		<classes>
+		<!--  	<class name="com.gcdp.testCases.TC_LoginTest" /> -->
+			<class name="com.gcdp.testCases.TC_LoginDDT" />
+		</classes>
+
+	</test>
+
+</suite>
